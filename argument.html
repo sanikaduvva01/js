@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Argument</title>
+
+   <script>
+
+// Function with Argument and Return
+function areaOfCircleWithArg(radius) {
+    return 3.14 * radius ** 2;
+}
+
+// Function with No Argument But Return
+function areaOfCircleNoArg() {
+    const radius = 5; // Predefined radius
+    return 3.14 * radius ** 2;
+}
+
+// Function with Argument But No Return
+function printAreaOfCircle(radius) {
+    const area = 3.14 * radius ** 2;
+    console.log("Area with argument but no return:", area);
+}
+
+// Function with No Argument and No Return
+function calculateAreaOfCircle() {
+    const radius = parseFloat(prompt("Enter the radius of the circle:"));
+    const area = 3.14 * radius ** 2;
+    console.log("Area with no argument & no return:", area);
+}
+
+
+console.log("Area with Argument and Return:", areaOfCircleWithArg(4));
+console.log("Area with No Argument But Return:", areaOfCircleNoArg(4));
+printAreaOfCircle(4);
+calculateAreaOfCircle();
+
+  
+   </script>
+ </head>
+ <body></body>
+</html>
